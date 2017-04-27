@@ -1,13 +1,17 @@
 <div class="cityHeader">
 	<h1><%= @city.name %>, <%= @city.location %></h1>
+
+	<%= button_to "Add Post", new_post_path, :method => "get" %>
 </div>
+
 
 <div class="cityPic">
 	<img src="<%= @city.photoUrl %>"/>
+
 </div>
 <ul>
 	<% @posts.each do |post| %>
-	<h3><%= post.title %></h3><br>
+	<h3><%= link_to post.title, post_path(post.id) %></h3><br>
 	<li><%= post.content %></li><br>
 	<% end %>
 </ul>
