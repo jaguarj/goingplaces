@@ -1,3 +1,50 @@
-// Place all the styles related to the StaticPages controller here.
+/*// Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+/*ATLanta.png*/
+
+
+body {
+	background-image: url('http://cdn.wallpapersafari.com/32/22/AC4a5O.jpg');
+	background-size: cover;
+
+}
+
+header {
+
+	background: rgba(0,0,0,0.5);
+}
+
+#logo {
+
+
+
+}
+
+nav {
+
+
+}
+
+ul {
+	/*background: rgba(0,0,0,0.5);*/
+
+}
+
+li {
+	display: inline-block;
+	padding: 1.5rem;
+
+}
+
+a {
+	color: white;
+	font-size: 2.5rem;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}

@@ -9,14 +9,29 @@
   </head>
 
   <body>
-  <nav>
- 	<ul>
- 		<li><%= link_to "Home", home_path %></li>
- 		<li><%= link_to "About", about_path %></li>
 
 
- 	</ul>
- </nav>
+
+  <header>
+
+  <div id='logo'>
+      goingplaces
+  </div>
+
+    <nav>
+     	<ul>
+     		<li><%= link_to "Home", home_path %></li>
+     		<li><%= link_to "About", about_path %></li>
+     	</ul>
+   </nav>
+ </header>
+
+
+
+
+
+
+
  <!-- devise logic  -->
  	<% if notice %>
  		<p class ="alert alert-success"><%= notice %></p>
