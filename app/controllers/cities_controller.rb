@@ -6,7 +6,7 @@ class CitiesController < ApplicationController
 
   def show
   	@city = City.find(params[:id])
-  	@posts = @city.posts
+  	@posts = @city.posts.sort_by { |post| post.created_at}
   end
 
 end
