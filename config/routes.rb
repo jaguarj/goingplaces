@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   	registrations: 'users/registrations'
   }
 
-  resources :cities
-  resources :posts
+  resources :cities do
+  	resources :posts
+  end
 
 
 

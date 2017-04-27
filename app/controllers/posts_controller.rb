@@ -8,7 +8,7 @@ before_action :authenticate_user!
 	end
 
 	def new
-		# @city = City.find(params[:city_id])
+		@city = City.find(params[:city_id])
 		@post = Post.new
 	end
 
@@ -20,6 +20,7 @@ before_action :authenticate_user!
 	end
 
 	private
+
 	def post_params
 		params.require(:post)
 		.permit(:title, :content)
