@@ -3,3 +3,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+body {
+	/*background:grey;*/
+}
+
+.cityHeader {
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+}
+
+.cityPic {
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 10px solid red;
+
+}
+

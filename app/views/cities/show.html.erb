@@ -1,3 +1,7 @@
-<h2>Cities Show</h2>
+<div class="cityHeader">
+	<h1><%= @city.name %>, <%= @city.location %></h1>
+</div>
 
-<p><%= @city %></p>
+<div class="cityPic">
+	<img src="<%= @city.photoUrl %>"/>
+</div>
