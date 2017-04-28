@@ -3,6 +3,7 @@ before_action :authenticate_user!
 
 	def show
 		@post = Post.find(params[:id])
+		@city = @post.city
 		@post.title = @post.title.upcase
 		@user = User.find(@post.user_id)
 	end
@@ -27,7 +28,7 @@ before_action :authenticate_user!
 		post = Post.find(params[:id])
 		post.update(post_params)
 		city = post.city
-		redirect_to city_post_path(city, post)
+		redirect_to city_path(city)
 	end
 
 	def destroy

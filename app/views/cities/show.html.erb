@@ -4,24 +4,14 @@
 </div>
 
 
-<div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="<%= @city.photoUrl %>">
-  <div class="card-block">
-   <% @posts.each do |post| %>
-    <h4 class="card-title"><%= post.title %></h4>
-    <p class="card-text"><%= post.content %></p>
-      <% end %>
-  </div>
-</div>
-
 <div class="cityPic">
 	<img src="<%= @city.photoUrl %>"/>
 </div>
 
 <ul>
 	<% @posts.each do |post| %>
-		<h3><%= link_to post.title, city_post_path(post.city, post) %></h3><br>
-		<li><%= post.content %></li><br>
+		<h3><%= link_to post.title, city_post_path(post.city, post) %></h3>
+		<h4><%= post.content %></h4><br>
 	<% end %>
 </ul>
 
