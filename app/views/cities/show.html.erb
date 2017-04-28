@@ -10,9 +10,8 @@
   <img class="card-img-top" src="<%= @city.photoUrl %>" style="height:180px; width:318px;">
   <div class="card-block">
    <% @posts.each do |post| %>
-    <h4 class="card-title"><%= post.title %></h4>
+    <h4 class="card-title"><%= link_to post.title, city_post_path(post.city, post) %></h4>
     <p class="card-text"><%= post.content %></p>
-    <%= button_to "View Post", city_post_path(post.city, post), :method => "get" %>
       <% end %>
   </div>
 </div>
