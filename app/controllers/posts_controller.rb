@@ -16,7 +16,8 @@ before_action :authenticate_user!
 		post = Post.create(post_params)
 		city = post.city
 		# binding.pry
-		redirect_to city_post_path(city, post)
+		# redirect_to city_post_path(city, post)
+		redirect_to city_path(city, post)
 	end
 	def edit
 		@city = City.find(params[:city_id])
@@ -30,9 +31,9 @@ before_action :authenticate_user!
 	end
 
 	def destroy
-		post = Post.find(params[:id])
-		city = post.city
-		post.destroy
+		@post = Post.find(params[:id])
+		city = @post.city
+		@post.destroy
 		redirect_to city_path(city)
 	end
 
