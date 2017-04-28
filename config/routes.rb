@@ -2,9 +2,10 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {
   	registrations: 'users/registrations'
   }
-
-  resources :cities
-  resources :posts
+  delete '/cities/:city_id/posts/:id' => 'posts#destroy', as: "post_delete"
+  resources :cities do
+  	resources :posts
+  end
 
 
 
