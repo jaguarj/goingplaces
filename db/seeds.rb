@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
 City.create(name: 	  'Atlanta',       photoUrl: 'http://businessbend.com/wp-content/uploads/2016/05/Atlanta-Walking-Dead-Season-5-Trailer-14729447476_646e7facf7_h.jpg',
 			location: 'Georgia');
 City.create(name: 	  'London',        photoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfFG2lo6ben2w7iE33M27poBo6PsJB84USapHENxWEMxgUOdwM',
