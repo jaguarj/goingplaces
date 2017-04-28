@@ -17,14 +17,7 @@
 /*Main Layout Styles*/
 
 
-body {
-	background: image-url('nyc.jpg') no-repeat center center fixed;
- 	background-size: cover;
-}
 
-body.cities_index {
-	background-image: image-url('venice.jpg');
-}
 
 /*
 #main-body:before {
@@ -45,6 +38,17 @@ body.cities_index {
 
 }
 */
+
+
+
+body {
+	background: image-url('nyc.jpg') no-repeat center center fixed;
+ 	background-size: cover;
+}
+
+body.cities_index {
+	background-image: image-url('venice.jpg');
+}
 
 
 header {

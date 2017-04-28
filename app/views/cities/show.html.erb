@@ -2,6 +2,14 @@
 
 
 
+
+<div class="cityHeader">
+	<h1><%= @city.name %>, <%= @city.location %></h1>
+</div>
+
+
+
+
 <div class="card" style="width: 20rem;">
   <img class="card-img-top" src="<%= @city.photoUrl %>" style="height:180px; width:318px;">
   <div class="card-block">
@@ -12,6 +20,7 @@
       <% end %>
   </div>
 </div>
+
 
 
 
