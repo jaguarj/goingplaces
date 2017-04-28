@@ -1,7 +1,12 @@
+<%= stylesheet_link_tag 'cities-show.css.scss' %>
+
+<h1>Cities Show Page</h1>
+
 <div class="cityHeader">
 	<h1><%= @city.name %>, <%= @city.location %></h1>
 	<%= button_to "Add Post", new_city_post_path(@city.id), :method => "get" %>
 </div>
+
 
 
 <div class="card" style="width: 20rem;">
@@ -13,6 +18,7 @@
       <% end %>
   </div>
 </div>
+
 
 <div class="cityPic">
 	<img src="<%= @city.photoUrl %>"/>

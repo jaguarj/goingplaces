@@ -1,12 +1,21 @@
-<h1>Going Places</h1>
-<ul>
-	<% @cities.each do |city| %>
-	<h2><%= city.name %>,
-	<%= city.location %> </h2>
-	<img src= "<%= city.photoUrl %>">
 
-	<% end %>
+<div class="cities-page">
+
+	<div class="box">
+
+		<div class="cities-content">
 
 
-</ul>
+				<ul>
+					<% @cities.each do |city| %>
+					<span><h3><%= city.name %>,
+						<%= city.location %> </h3></span>
+						<img class="cities-img" src="<%= city.photoUrl %>">
+					<% end %>
+				</ul>
 
+		</div>
+
+	</div>
+
+</div>
