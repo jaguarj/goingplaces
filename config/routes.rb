@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/show'
+
   devise_for :users, controllers: {
   	registrations: 'users/registrations'
   }
@@ -7,7 +9,7 @@ Rails.application.routes.draw do
   	resources :posts
   end
 
-
+# get '/show/:user_id' => 'user#profile, as: ""
 
 
  get 'about' => 'static_pages#about'
