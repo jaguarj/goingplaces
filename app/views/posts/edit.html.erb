@@ -1,6 +1,6 @@
-<h2>New Posts</h2>
+<h2>Edit Posts</h2>
 
-<%= form_for [@city, @post]  do |f| %>
+<%= form_for [@city, @post] do |f| %>
 
   <div class="field">
     <%= f.label :title %>
@@ -15,6 +15,6 @@
   <div>
 
   <div class="actions">
-    <%= f.submit "Add new post" %>
+    <%= f.submit "Edit Post" %>
   </div>
 <% end %>
