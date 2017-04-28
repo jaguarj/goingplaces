@@ -29,6 +29,13 @@ before_action :authenticate_user!
 		redirect_to city_post_path(city, post)
 	end
 
+	def destroy
+		post = Post.find(params[:id])
+		city = post.city
+		post.destroy
+		redirect_to city_path(city)
+	end
+
 	private
 
 	def post_params
