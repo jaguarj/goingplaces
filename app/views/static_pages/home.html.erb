@@ -2,29 +2,23 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-3">Going Places</h1>
-    <button class="btn btn-primary"><%= link_to "Atlanta", cities_path %></button>
-  </div>
 
 
-<h1>Going Places</h1>
 
-<ul>
-		<% @cities.each do |city| %>
-				<span><h3><%= city.name %>,
-					<%= city.location %> </h3></span>
-					<img class="cities-img" src="<%= city.photoUrl %>">
-					<% end %>
-</ul>
+
+
+
+
 
 <ul>
 	<% @cities.each do |city| %>
-		<%= city.name %>
+
 
 
 		<button class="btn btn-primary"><%= link_to city.name, city_path(city) %></button>
 	<% end %>
 </ul>
-
+  </div>
 
 
 
