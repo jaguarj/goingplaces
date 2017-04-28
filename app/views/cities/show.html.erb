@@ -20,7 +20,7 @@
 
 <ul>
 	<% @posts.each do |post| %>
-		<h3><%= link_to post.title, city_post_path(post.id) %></h3><br>
+		<h3><%= link_to post.title, city_post_path(post.city, post) %></h3><br>
 		<li><%= post.content %></li><br>
 	<% end %>
 </ul>
