@@ -3,7 +3,7 @@
   <div class="container">
     <h1 class="display-3">Going Places</h1>
     <% @cities.each do |city| %>
-    	<button class="btn btn-primary"><%= link_to city.name, city_path(city) %></button>
+    	<button class="btn btn-default"><%= link_to city.name, city_path(city) %></button>
     <% end %>
 
 

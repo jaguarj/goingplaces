@@ -1,16 +1,15 @@
 <h1>Profile</h1>
 
 <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <img class="card-img-top" src="<%= @user.user_photo %>" style="width: 310px; height: 180px;"/>
   <div class="card-block">
     <h4 class="card-title"><%= @user.username %></h4>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item"><%= @user.favorite_city %></li>
-    <li class="list-group-item"><%= @user.current_city %></li>
+    <li class="list-group-item">Favorite city: <%= @user.favorite_city %></li>
+    <li class="list-group-item">Current city: <%= @user.current_city %></li>
   </ul>
   <div class="card-block">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+  <%= link_to "Edit", edit_user_registration_path %>
   </div>
 </div>
