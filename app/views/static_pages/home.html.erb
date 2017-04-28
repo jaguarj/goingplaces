@@ -13,12 +13,12 @@
 <ul>
 	<% @cities.each do |city| %>
 		<%= city.name %>
-		<% binding.pry %>
+
 
 		<button class="btn btn-primary"><%= link_to city.name, city_path(city) %></button>
 	<% end %>
 </ul>
 
- 
+
 
 

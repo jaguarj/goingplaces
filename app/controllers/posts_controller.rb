@@ -16,7 +16,7 @@ before_action :authenticate_user!
 	def create
 		post = Post.create(post_params)
 		city = post.city
-		# binding.pry
+
 		# redirect_to city_post_path(city, post)
 		redirect_to city_path(city, post)
 	end
