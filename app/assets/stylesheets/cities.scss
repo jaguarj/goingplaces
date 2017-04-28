@@ -2,6 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/*.cities-page {
+	content: "";
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	min-height: 100%;
+    background-image: url(nyc.jpg);
+	background-repeat: none;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+
+}*/
 
 
 .cities-content {
@@ -15,7 +32,7 @@
 .cities-content h3 {
 
 }
-
+/*
 .cities-content ul {
 	margin: 100px 0px 0px -40px;
 	text-align: center;
@@ -30,7 +47,7 @@
 
 
 
-
+*/
 
 
 
