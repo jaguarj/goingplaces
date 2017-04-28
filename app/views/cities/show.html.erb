@@ -1,21 +1,22 @@
-<%= stylesheet_link_tag 'cities-show.css.scss' %>
+<div class="cities-page">
 
 
-<div class="cityHeader">
-	<h1><%= @city.name %>, <%= @city.location %></h1>
-	<%= button_to "Add Post", new_city_post_path(@city.id), :method => "get" %>
+	<div class="cityHeader">
+		<h1><%= @city.name %>, <%= @city.location %></h1>
+		<%= button_to "Add Post", new_city_post_path(@city.id), :method => "get" %>
+	</div>
+
+	<div class="cityPic">
+		<img src="<%= @city.photoUrl %>"/>
+	</div>
+
+	<ul>
+		<% @posts.each do |post| %>
+			<h3><%= link_to post.title, city_post_path(post.city, post) %></h3>
+			<h4><%= post.content %></h4><br>
+		<% end %>
+	</ul>
+
+
 </div>
-
-<div class="cityPic">
-	<img src="<%= @city.photoUrl %>"/>
-</div>
-
-<ul>
-	<% @posts.each do |post| %>
-		<h3><%= link_to post.title, city_post_path(post.city, post) %></h3>
-		<h4><%= post.content %></h4><br>
-	<% end %>
-</ul>
-
-
 
