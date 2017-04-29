@@ -19,7 +19,6 @@ before_action :authenticate_user!
 		post = Post.create(post_params)
 		city = post.city
 
-		# redirect_to city_post_path(city, post)
 		redirect_to city_path(city, post)
 	end
 	def edit

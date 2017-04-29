@@ -6,6 +6,7 @@
     <h4 class="card-title"><%= @user.username %></h4>
   </div>
   <ul class="list-group list-group-flush">
+    <li class="list-group-item">Date Joined: <%= @user.created_at.to_date %></li>
     <li class="list-group-item">Favorite city: <%= @user.favorite_city %></li>
     <li class="list-group-item">Current city: <%= @user.current_city %></li>
   </ul>
@@ -13,3 +14,12 @@
   <%= link_to "Edit", edit_user_registration_path %>
   </div>
 </div>
+<% @posts.each do |post| %>
+<h3><%= post.city.name %>, <%= post.city.location %></h3>
+<p><%= post.title %></p>
+<p><%= post.content %></p>
+<%= button_to "Edit Post", edit_city_post_path(post.city.id, post), :method => "get" %>
+<%= button_to "Delete Post", post_delete_path(post.city.id, post), :method => "delete", data: {
+  confirm: 'Are you sure you want to delete?'
+  } %>
+<% end %>
