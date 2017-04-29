@@ -1,25 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## goingplaces
 
-Things you may want to cover:
+** goingplaces ** is an app that lets users post travel tips about the
+places they've visited! All a user has to do to make a new post is
+just sign up, and then the user will be routed to the home page to view a
+list of current cities.
 
-* Ruby version
+Users can add, edit, and delete posts on the city of their choosing and
+they can also see all of their posts on their profile page.
 
-* System dependencies
+## Technologies Used
 
-* Configuration
+* HTML
+* CSS
+* Ruby
+* Rails
+* Bootstrap
+* Bootswatch
+* Git
+* GitHub
+* Heroku
+* CLI
+* [Trello] (https://trello.com/b/MGznU8n0/project-4)
+* Sublime Text 3
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# goingplaces
+## Developers
+* David Hernquist
+* Magdelena Kinney
+* [Josh Seipel] (https://jaguarj.github.io/myportfolio/)
