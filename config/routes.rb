@@ -17,7 +17,7 @@ Rails.application.routes.draw do
  # get '/cities' => 'cities#index'
 
  # get '/cities/:id' => 'cities#show'
-
+post '/cities/:city_id/posts' => 'posts#create', as: 'post_create'
  root to: "static_pages#home"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

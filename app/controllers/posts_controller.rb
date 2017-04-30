@@ -17,10 +17,16 @@ before_action :authenticate_user!
 
 	def create
 		post = Post.create(post_params)
-		city = post.city
+		@city = City.find(params["city_id"])
+		@post = Post.new(post_params)
 
-		redirect_to city_path(city, post)
+		if @post.save
+			redirect_to "/cities/#{@city.id}"
+		else
+			render :new
+		end
 	end
+
 	def edit
 		@city = City.find(params[:city_id])
 		@post = Post.find(params[:id])
