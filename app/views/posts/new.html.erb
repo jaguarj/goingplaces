@@ -1,5 +1,6 @@
-<h2>New Posts</h2>
+<h2 class="logIn">New Posts</h2>
 
+<div class="new_post">
 <%= bootstrap_form_for [@city, @post]  do |f| %>
   <div class="field">
     <%= f.text_field :title %>
@@ -15,4 +16,4 @@
     <%= f.submit "Add new post" %>
   </div>
 <% end %>
-
+</div>
