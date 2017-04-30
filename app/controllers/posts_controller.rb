@@ -16,7 +16,7 @@ before_action :authenticate_user!
 	end
 
 	def create
-		post = Post.create(post_params)
+		# post = Post.create(post_params)
 		@city = City.find(params["city_id"])
 		@post = Post.new(post_params)
 
