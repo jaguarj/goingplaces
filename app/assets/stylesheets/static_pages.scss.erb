@@ -4,13 +4,16 @@
 
 .jumbotron{
   background-image: url("<%= asset_path('nyc.jpg')%>");
- /* background-repeat: none;*/
+  background-repeat: none;
   background-size: cover;
-  height: 80vh;
+  height: 50vh;
   width: 100%;
+  background-image: url("http://www.atlanta.net/_static/img/header_dining.jpg")
 }
 
-
+.display-3{
+  background-color: rgba(255,255,255,0.5);
+}
 .container{
   text-align:center;
 }
@@ -20,9 +23,10 @@ header {
 }
 
 nav {
-	display: flex;
+/*	display: flex;*/
 	text-align: right;
-	justify-content: space-between;
+/*  align-content: right;
+	justify-content: space-between;*/
 
 }
 
@@ -30,12 +34,54 @@ nav {
 	text-align: left;
 	display: inline-block;
 	padding: 0px 1rem;
-
+  color: white;
+  background-image: url("http://www196.lunapic.com/do-not-link-here-use-hosting-instead/149351927679477?987326423");
+  background-size: contain;
+ background-repeat: no-repeat;
+ color:black;
+  padding-right: 50%;
+  padding-left: 50%;
 }
+
+.logos{
+ height: 80px;
+ width: 200px;
+}
+body.sessions_new, , .registrations_create,.registrations_new{
+ background-image: url("<%= asset_path('nyc.jpg')%>");
+ background-repeat: none;
+ background-size: cover;
+ color: white;
+}
+.logIn{
+  text-align:center;
+  text-decoration-style: bold;
+}
+a{
+  color: white;
+}
+.blue {
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgba(0,0,0,0.5);
+background-size: contain;
+}
+
+.green {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  background: rgba(0,0,0,0.5);
+  background-size: contain;
+  padding-top: 5px;
+  }
 
 li {
 	display: inline-block;
 	padding: 1.5rem;
 
 }
+
 

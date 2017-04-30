@@ -1,7 +1,7 @@
 <h1>Profile</h1>
-
+<div class="profile"
 <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="<%= @user.user_photo %>" style="width: 310px; height: 180px;"/>
+  <img class="card-img-top" src="<%= @user.user_photo %>" style="width: 300px; height: 300px;"/>
   <div class="card-block">
     <h4 class="card-title"><%= @user.username %></h4>
   </div>
@@ -11,6 +11,7 @@
     <li class="list-group-item">Current city: <%= @user.current_city %></li>
   </ul>
   <div class="card-block">
+ <!--  this may have to change back to button  -->
     <%= link_to "Edit", edit_user_registration_path %>
   </div>
 </div>
@@ -20,7 +21,7 @@
     <% if @city_user_info.count(city.id) > 0 %>
       <%= city.name %>, <%= city.location %>: <%= @city_user_info.count(city.id) %>
     <% end %>
-  <% end %> 
+  <% end %>
 </div>
 
 <% @posts.each do |post| %>
@@ -30,3 +31,4 @@
   <%= button_to "Edit Post", edit_city_post_path(post.city.id, post), :method => "get" %>
   <%= button_to "Delete Post", post_delete_path(post.city.id, post), :method => "delete", data: { confirm: 'Are you sure you want to delete?' } %>
 <% end %>
+</div>

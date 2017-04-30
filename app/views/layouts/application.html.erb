@@ -4,6 +4,9 @@
     <title>GoingPlaces</title>
     <%= csrf_meta_tags %>
 
+   <link rel=“stylesheet” media=“screen” href=“//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css”>
+   <script src=“//code.jquery.com/jquery.js”></script>
+   <script src=“//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js”></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= render 'layouts/shim' %>
@@ -12,7 +15,7 @@
   <body class='<%= "#{controller_name}_#{action_name}" %>'>
 
 
-      <%= render 'layouts/header' %>
+      <%#= render 'layouts/header' %>
 
      <!-- devise logic  -->
      	<% if notice %>
@@ -24,6 +27,6 @@
 
       <%= yield %>
 
-      <%= render 'layouts/footer' %>
+      <%#= render 'layouts/footer' %>
   </body>
 </html>

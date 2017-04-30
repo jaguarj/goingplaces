@@ -37,6 +37,8 @@ gem 'bootstrap-sass'
 gem 'bootstrap_form'
 gem 'bootswatch-rails'
 gem 'devise', "4.2.1"
+gem 'devise-bootstrap-views'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
