@@ -1,26 +1,14 @@
 <h2>New Posts</h2>
 
-<!-- <%#bootstrap_form_for [@city, @post]  do |f| %> -->
 <%= bootstrap_form_for(@post, url: post_create_path, inline_errors: false) do |f| %>
   <h3><%= f.alert_message "Oops!..." %></h3>
 
   <div class="field">
     <%= f.text_field :title %>
-    <%#= f.text_field :content %>
-
-
-
-   <!-- <h3> <%#= f.alert_message "There was a huge issue!" if @post.errors.any? %></h3> -->
-
   </div>
-
   <div class="field">
     <%= f.text_field :content %>
-
-  <!-- <h3><%#= f.alert_message "There was a huge issue again!" if @post.errors.any? %></h3> -->
-
   </div>
-
   <div class="actions">
     <%= f.submit "Add New Post" %>
   </div>

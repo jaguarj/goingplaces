@@ -3,7 +3,6 @@ class Post < ApplicationRecord
 	belongs_to :city
 
 validates :title, :content, :presence => true
-# validates :title, :content, presence: { message: "must be given please" }
 validates :title, length: { maximum: 200 }
 
 
