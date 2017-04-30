@@ -1,13 +1,11 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-* {
-  font-family: Arial, sans-serif;
+*{
+  font-family: arial, sans-serif;
 }
-
-h1 {
-  font-family: Arial, sans-serif;
+body{
+  background: #f2eabb
 }
 
 .jumbotron{
@@ -33,9 +31,7 @@ header {
 nav {
   display: flex;
 	justify-content: space-between;
-  font-size: 20px;
-
-
+  font-size: 2rem;
 }
 
 #logo {
@@ -45,9 +41,8 @@ nav {
   color: white;
   background-image: url("http://www196.lunapic.com/do-not-link-here-use-hosting-instead/149351927679477?987326423");
   background-size: contain;
- background-repeat: no-repeat;
- color:black;
-
+  background-repeat: no-repeat;
+  color:black;
 }
 
 .logos{
@@ -57,7 +52,7 @@ nav {
 
  body.sessions_new, .registrations_create,.registrations_new{
  background-image: url("<%= asset_path('nyc.jpg')%>");
- background-repeat: none;
+ background-repeat: no-repeat;
  background-size: cover;
  color: white;
 }
@@ -65,14 +60,14 @@ nav {
   text-align:center;
   text-decoration-style: bold;
 }
-a {
+
+a{
   color: white;
 }
 
 a:hover {
   text-decoration: none;
 }
-
 
 .blue {
 display: flex;
@@ -91,30 +86,46 @@ background-size: contain;
   background-size: contain;
   padding-top: 5px;
   }
-
 ul {
   padding-top: 20px;
-
 }
-
 li {
 	display: inline-block;
 	padding: 1.5rem;
-
+  text-decoration:none;
 }
-
+.aboutPic{
+  width: 200px;
+  height: 200px;
+}
 #about-page {
-  margin: 0 auto;
-  margin-top: 3rem;
-  width: 700px;
-  padding: 1rem;
-  background: red;
-  text-align: center;
-  border-radius: 1rem;
-  transition: all .2s ease-in-out;
-}
+ margin: 0 auto;
+ margin-top:7rem;
+ width: 700px;
+ padding: 2rem;
+ text-align: center;
+ background: rgba(255,255,255,0.5);
+ border-radius: 5%;
+ transition: all .5s ease-in-out;
 
-#about-page:hover {
+}
+#about-page:hover, .profile:hover {
   box-shadow: 1px 1px 20px 1px black;
   transform: scale(1.1);
+}
+
+ .profile {
+ margin: 0 auto;
+ margin-top:5.6rem;
+ width: 700px;
+ padding: 2rem;
+ text-align: center;
+ background: rgba(255,255,255,0.5);
+ border-radius: 5%;
+ transition: all .5s ease-in-out;
+ text-align: center;
+ color: black;
+ }
+.post-count {
+  display: inline-block;
 }
