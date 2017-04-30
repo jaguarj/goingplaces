@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+}
+
 .jumbotron{
   background-image: url("<%= asset_path('nyc.jpg')%>");
   background-repeat: none;
@@ -23,10 +31,10 @@ header {
 }
 
 nav {
-/*	display: flex;*/
-	text-align: right;
-/*  align-content: right;
-	justify-content: space-between;*/
+  display: flex;
+	justify-content: space-between;
+  font-size: 20px;
+
 
 }
 
@@ -39,15 +47,15 @@ nav {
   background-size: contain;
  background-repeat: no-repeat;
  color:black;
-  padding-right: 50%;
-  padding-left: 50%;
+
 }
 
 .logos{
  height: 80px;
  width: 200px;
 }
-body.sessions_new, , .registrations_create,.registrations_new{
+
+ body.sessions_new, .registrations_create,.registrations_new{
  background-image: url("<%= asset_path('nyc.jpg')%>");
  background-repeat: none;
  background-size: cover;
@@ -57,9 +65,15 @@ body.sessions_new, , .registrations_create,.registrations_new{
   text-align:center;
   text-decoration-style: bold;
 }
-a{
+a {
   color: white;
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+
 .blue {
 display: flex;
 justify-content: center;
@@ -78,10 +92,29 @@ background-size: contain;
   padding-top: 5px;
   }
 
+ul {
+  padding-top: 20px;
+
+}
+
 li {
 	display: inline-block;
 	padding: 1.5rem;
 
 }
 
+#about-page {
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 700px;
+  padding: 1rem;
+  background: red;
+  text-align: center;
+  border-radius: 1rem;
+  transition: all .2s ease-in-out;
+}
 
+#about-page:hover {
+  box-shadow: 1px 1px 20px 1px black;
+  transform: scale(1.1);
+}
