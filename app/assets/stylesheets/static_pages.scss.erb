@@ -1,7 +1,12 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+*{
+  font-family: arial, sans-serif;
+}
+body{
+  background: #f2eabb
+}
 .jumbotron{
   background-image: url("<%= asset_path('nyc.jpg')%>");
   background-repeat: none;
@@ -23,11 +28,9 @@ header {
 }
 
 nav {
-/*	display: flex;*/
-	text-align: right;
-/*  align-content: right;
-	justify-content: space-between;*/
-
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
 }
 
 #logo {
@@ -37,10 +40,8 @@ nav {
   color: white;
   background-image: url("http://www196.lunapic.com/do-not-link-here-use-hosting-instead/149351927679477?987326423");
   background-size: contain;
- background-repeat: no-repeat;
- color:black;
-  padding-right: 50%;
-  padding-left: 50%;
+  background-repeat: no-repeat;
+  color:black;
 }
 
 .logos{
@@ -49,7 +50,7 @@ nav {
 }
 body.sessions_new, , .registrations_create,.registrations_new{
  background-image: url("<%= asset_path('nyc.jpg')%>");
- background-repeat: none;
+ background-repeat: no-repeat;
  background-size: cover;
  color: white;
 }
@@ -57,9 +58,15 @@ body.sessions_new, , .registrations_create,.registrations_new{
   text-align:center;
   text-decoration-style: bold;
 }
+
 a{
   color: white;
 }
+
+a:hover {
+  text-decoration:none;
+}
+
 .blue {
 display: flex;
 justify-content: center;
@@ -77,10 +84,14 @@ background-size: contain;
   background-size: contain;
   padding-top: 5px;
   }
-
+ul {
+  padding-top: 20px;
+}
 li {
 	display: inline-block;
 	padding: 1.5rem;
+  text-decoration:none;
+
 
 }
 
