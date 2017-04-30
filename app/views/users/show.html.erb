@@ -19,14 +19,17 @@
   <div class="card-block">
     <h3 id="card_title"><%= link_to "Edit Profile", edit_user_registration_path %></h3>
   </div>
+
+
 <div class="post_block">
-<% @posts.each do |post| %>
-   <h3><%=post.city.name %></h3>
-  <%= post.title %>
-<!--   <p><%#= post.content %></p> -->
-  <%= button_to "Edit Post", edit_city_post_path(post.city.id, post), :method => "get" %>
-  <%= button_to "Delete Post", post_delete_path(post.city.id, post), :method => "delete", data: { confirm: 'Are you sure you want to delete?' } %>
-<% end %>
+  <% @posts.each do |post| %>
+    <div id="post-post">
+      <h3><%=post.city.name %>: <%= post.title %></h3>
+      <p><%= post.content %></p>
+    </div>
+    <%= button_to "Edit Post", edit_city_post_path(post.city.id, post), :method => "get" %>
+    <%= button_to "Delete Post", post_delete_path(post.city.id, post), :method => "delete", data: { confirm: 'Are you sure you want to delete?' } %>
+  <% end %>
 </div>
 </div>
 </div>
