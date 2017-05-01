@@ -1,35 +1,32 @@
-
-
-<div class="profile">
-<h1 class="profile_header"><%= @user.username %></h1>
-<div class="card">
-  <img class="card-img-top" src="<%= @user.user_photo %>" style="width: 300px; height: 300px;"/>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Date Joined: <%= @user.created_at.to_date %></li>
-    <li class="list-group-item">Favorite city: <%= @user.favorite_city %></li>
-    <li class="list-group-item">Current city: <%= @user.current_city %></li>
-  </ul>
-  <div class="post-count">
-  <% @cities.each do |city| %>
-    <% if @city_user_info.count(city.id) > 0 %>
-      <%= city.name %>, <%= city.location %>: <%= @city_user_info.count(city.id) %>
-    <% end %>
-  <% end %>
-</div>
-  <div class="card-block">
-    <h3 id="card_title"><%= link_to "Edit Profile", edit_user_registration_path %></h3>
-  </div>
-
-
-<div class="post_block">
-  <% @posts.each do |post| %>
-    <div id="post-post">
-      <h3><%=post.city.name %>: <%= post.title %></h3>
-      <p><%= post.content %></p>
+<div class="profile-show">
+  <h1 class="profile_header"><%= @user.username %></h1>
+  <div class="master-container">
+    <div class="card">
+      <img class="card-img-top" src="<%= @user.user_photo %>"/>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Date Joined: <%= @user.created_at.to_date %></li>
+        <li class="list-group-item">Favorite city: <%= @user.favorite_city %></li>
+        <li class="list-group-item">Current city: <%= @user.current_city %></li>
+      </ul>
+      <!-- This is fine for now. -->
+      <div class="post-count">
+      <% @cities.each do |city| %>
+        <% if @city_user_info.count(city.id) > 0 %>
+          <%= city.name %>, <%= city.location %>: <%= @city_user_info.count(city.id) %>
+        <% end %>
+      <% end %>
+      </div>
+      <div class="card-block">
+        <h3 id="card_title"><%= link_to "Edit Profile", edit_user_registration_path %></h3>
+      </div>
     </div>
-    <%= button_to "Edit Post", edit_city_post_path(post.city.id, post), :method => "get" %>
-    <%= button_to "Delete Post", post_delete_path(post.city.id, post), :method => "delete", data: { confirm: 'Are you sure you want to delete?' } %>
-  <% end %>
-</div>
-</div>
+    <div class="post_block">
+      <% @posts.each do |post| %>
+          <h3><%=post.city.name %>: <%= post.title %></h3>
+          <h4><%= post.content %></h4>
+          <%= button_to "Edit Post", edit_city_post_path(post.city.id, post), :method => "get" %>
+          <%= button_to "Delete Post", post_delete_path(post.city.id, post), :method => "delete", data: { confirm: 'Are you sure you want to delete?' } %>
+      <% end %>
+    </div>
+  </div>
 </div>

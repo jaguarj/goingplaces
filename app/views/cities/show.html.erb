@@ -1,19 +1,21 @@
-<div class="cities-page">
+<!-- <div class="cities-page"> -->
 
-<div class="cityHeader">
-	<h1><%= @city.name %>, <%= @city.location %></h1>
-<%= button_to "Add Post", new_city_post_path(@city.id), :method => "get" , :class => "buttonTo" %>
-</div>
+	<div class="cityHeader">
+		<h1><%= @city.name %>, <%= @city.location %></h1>
+	</div>
 
 
-<div class="card" style="width: 20rem;">
+<div class="card">
   <img class="card-img-top" src="<%= @city.photoUrl %>" style="height:180px; width:318px;">
   <div class="card-block">
    <% @posts.each do |post| %>
-    <h4 class="card-title"><%= link_to post.title, city_post_path(post.city, post) %></h4>
-    <p class="card-text"><%= post.content %></p>
+    <h3 id="card_title"><%= link_to post.title, city_post_path(post.city, post) %></h3>
+    <br />
+    <%= post.content %>
       <% end %>
+      <%= button_to "Add a post!", new_city_post_path(@city.id), :method => "get" , :class => "buttonTo" %>
   </div>
+<!-- </div> -->
 </div>
-</div>
+
 

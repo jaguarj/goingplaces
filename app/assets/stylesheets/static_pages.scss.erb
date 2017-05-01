@@ -8,7 +8,7 @@ body{
   background: #f2eabb
 }
 
-.jumbotron{
+.jumbotron {
   background-image: url("<%= asset_path('nyc.jpg')%>");
   background-repeat: none;
   background-size: cover;
@@ -17,10 +17,10 @@ body{
   background-image: url("http://www.atlanta.net/_static/img/header_dining.jpg")
 }
 
-.display-3{
+.display-3 {
   background-color: rgba(255,255,255,0.5);
 }
-.container{
+.container {
   text-align:center;
 }
 
@@ -70,15 +70,15 @@ a:hover {
   text-decoration: none;
 }
 
-.blue {
+<!-- .blue {
 display: flex;
 justify-content: center;
 align-items: center;
 background: rgba(0,0,0,0.5);
 background-size: contain;
 }
-
-.green {
+ -->
+<!-- .green {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,7 +86,13 @@ background-size: contain;
   background: rgba(0,0,0,0.5);
   background-size: contain;
   padding-top: 5px;
-  }
+  } -->
+
+.blue {
+  text-align: center;
+  padding: 10px;
+}
+
 ul {
   padding-top: 20px;
 }
@@ -110,40 +116,58 @@ li {
  transition: all .5s ease-in-out;
 
 }
-#about-page:hover, .profile:hover {
+#about-page:hover, .profile:hover, .profile-show:hover {
   box-shadow: 1px 1px 20px 1px black;
   transform: scale(1.1);
 }
 
- .profile {
- margin: 0 auto;
- margin-top:5.6rem;
- width: 700px;
- padding: 2rem;
- text-align: center;
- background: rgba(255,255,255,0.5);
- border-radius: 5%;
- transition: all .5s ease-in-out;
- text-align: center;
- color: black;
- }
-.post-count {
+.profile_header {
+  margin-bottom: 4rem;
+}
+ .users_show, .posts_new {
+  background-color: #f2eabb;
+}
+
+.master-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 500px;
   display: inline-block;
 }
-.card {
-  width: 20rem;
+
+.post_block{
+  margin: 0;
+  max-width: 1300px;
+  display: inline-block;
 }
 
-#card_title a{
+.card-img-top {
+  width: 300px;
+  height: 300px;
+}
+
+.card-block {
+  font-size: 20px;
+  text-align: center;
+}
+
+#card_title a {
   color:black;
 }
-.post_block{
-  display: flex;
-  justify-content: space-between;
-  /*align-items: center;*/
+
+.list-group-item {
+  background: rgba(0,0,0,0.6);
+  color: white;
 }
 
-#post-post {
-  display: flex;
-  justify-content: center;
-  width: 200px;}
+
+
+
+
+
+
+
+
