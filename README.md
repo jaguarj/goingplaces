@@ -29,3 +29,5 @@ they can also see all of their posts on their profile page.
 * [David Hernquist](http://davidhernquist.com/)
 * Magdelena Kinney
 * [Josh Seipel](https://jaguarj.github.io/myportfolio/)
+
+
