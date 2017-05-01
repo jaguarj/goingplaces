@@ -8,7 +8,6 @@ class UsersController < ApplicationController
   	@cities = City.all
   	# this makes an array that stores the occurance of cities by city_id 
   	@city_user_info = @user.cities.select(:id).map { |c| c.id }
-  	
   end
 
 end

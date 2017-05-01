@@ -15,10 +15,7 @@
   </head>
 
   <body class='<%= "#{controller_name}_#{action_name}" %>'>
-
-
       <%= render 'layouts/header' %>
-
      <!-- devise logic  -->
      	<% if notice %>
      		<p class ="alert alert-success"><%= notice %></p>
@@ -30,8 +27,7 @@
       <%= yield %>
 
       <main></main>
-
+      <!-- At the last minute the footer was a real kick in the pants -->
       <%#= render 'layouts/footer' %>
-
   </body>
 </html>

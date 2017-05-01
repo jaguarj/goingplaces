@@ -1,20 +1,16 @@
-
-<div class="green">
+<!-- Class green is for go! As in go edit with this form -->
+<div class="green"> 
 <h2 class="edit_post_header">Edit Posts</h2>
 <%= bootstrap_form_for [@city, @post] do |f| %>
-
   <div class="field">
     <%= f.text_field :title %>
   <div>
-
   <div class="field">
     <%= f.text_field :content %>
   <div>
-
   <div class="actions">
     <%= f.submit "Edit Post" %>
   </div>
 <% end %>
 </div>
-
 
