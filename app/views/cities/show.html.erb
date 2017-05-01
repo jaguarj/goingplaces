@@ -1,19 +1,32 @@
 <div class="cities-page">
+	
+	<div class="container">
+	  <div class="big-image">
+	    <img src="<%= @city.photoUrl %>" class="big-image-jumbo">
+	  </div>
+	</div>
 
-<div class="cityHeader">
-	<h1><%= @city.name %>, <%= @city.location %></h1>
-<%= button_to "Add Post", new_city_post_path(@city.id), :method => "get" , :class => "buttonTo" %>
-</div>
+	<div class="city-header">
+		<h2><%= @city.name %>, <%= @city.location %> </h2>
+		<div id="add-post-button">
+			<%= button_to "Add Post", new_city_post_path(@city.id), :method => "get" , :class => "buttonTo" %>
+		</div>
+	</div>
 
-
-<div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="<%= @city.photoUrl %>" style="height:180px; width:318px;">
-  <div class="card-block">
-   <% @posts.each do |post| %>
-    <h4 class="card-title"><%= link_to post.title, city_post_path(post.city, post) %></h4>
-    <p class="card-text"><%= post.content %></p>
-      <% end %>
-  </div>
-</div>
+	<div class="card" style="width: 70rem;">
+	  <div class="card-block">
+	   	<% @posts.each do |post| %>
+				<div class="card-container">
+		   		<img src="<%= post.user.user_photo %>" 
+		   				 alt="no user photo"
+		   				 id="user-post-photo">
+		   		<div class="card-text">		 
+			    	<h4 class="card-title"><%= link_to post.title, city_post_path(post.city, post) %> <%= post.created_at.to_date %></h4>
+			    	<p class="card-text"><%= post.content %></p>
+		    	</div>
+	    	</div>
+	    <% end %>
+	  </div>
+	</div>
 </div>
 

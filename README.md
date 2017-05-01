@@ -29,3 +29,7 @@ they can also see all of their posts on their profile page.
 * [David Hernquist](http://davidhernquist.com/)
 * Magdelena Kinney
 * [Josh Seipel](https://jaguarj.github.io/myportfolio/)
+
+##Workflow and user stories
+* Trello (https://trello.com/b/MGznU8n0/project-4)
+
