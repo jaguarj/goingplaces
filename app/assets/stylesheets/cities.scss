@@ -3,18 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
-/*.cities_img {
-  height: 20vh;
-  width: 70vh;
-}*/
-
 .big-image {
-	/*background-repeat: none;
-  background-size: cover;
-  height: 50vh;
-  width: 100%;*/
-
   position:relative;
   height: 400px;
   margin: 5px 5px 0 5px;
@@ -46,7 +35,6 @@
 
 .post-card-for-city {
 	margin: 0 auto;
-
 }
 
 .post-card-block {
@@ -57,7 +45,6 @@
 	display: flex;
 	justify-content: space-between;
 	margin: .5rem;
-
 }
 
 
