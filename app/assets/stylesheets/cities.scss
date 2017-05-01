@@ -28,14 +28,14 @@
   z-index: -1;
 }
 
-.city-header {
+.city-show-page-header {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 80px 0 80px;
+	padding: 0 200px 0 200px;
 }
 
 #add-post-button {
-	margin-top: 2rem; 
+	margin-top: 1rem;
 }
 
 #user-post-photo {
@@ -44,23 +44,23 @@
 	border-radius: .5rem
 }
 
-.card {
+.post-card-for-city {
 	margin: 0 auto;
-	
+
 }
 
-.card-block {
+.post-card-block {
 	margin: 1rem;
 }
 
-.card-container {
+.post-card-container {
 	display: flex;
 	justify-content: space-between;
 	margin: .5rem;
-	
+
 }
 
-.card-text {
+.post-card-text {
 	display:flex;
 	flex-direction: column;
 	margin: 0 auto;
