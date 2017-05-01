@@ -14,3 +14,4 @@ City.create(name: 	  'London',        photoUrl: 'https://cdn.londonandpartners.c
 			location: 'England');
 City.create(name:     'San Francisco', photoUrl: 'http://assets.lookbookspro.com/bernstein-andriulli/gm_52c70ea2-a228-421f-9b72-48520af4b6c2.jpg',
 			location: 'California');
+
