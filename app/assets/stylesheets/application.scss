@@ -15,6 +15,16 @@
  *= require rails_bootstrap_forms
  */
 
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
 .profile-show {
  margin: 0 auto;
  margin-top:5.6rem;
@@ -71,11 +81,8 @@ header {
 	height: 120px;
 }
 
-footer.navbar.navbar-default.navbar-fixed-bottom {
-  max-height: -10px;
-  background-image: url("<%= asset_path('footer_logo.png')%>");
-  background-repeat: none;
-  background-size: contain;
+footer.navbar.navbar-default.navbar-bottom {
+
 
 }
 
