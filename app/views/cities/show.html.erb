@@ -1,5 +1,6 @@
+
 <div class="cities-page">
-	
+
 	<div class="container">
 	  <div class="big-image">
 	    <img src="<%= @city.photoUrl %>" class="big-image-jumbo">
@@ -17,10 +18,10 @@
 	  <div class="card-block">
 	   	<% @posts.each do |post| %>
 				<div class="card-container">
-		   		<img src="<%= post.user.user_photo %>" 
+		   		<img src="<%= post.user.user_photo %>"
 		   				 alt="no user photo"
 		   				 id="user-post-photo">
-		   		<div class="card-text">		 
+		   		<div class="card-text">
 			    	<h4 class="card-title"><%= link_to post.title, city_post_path(post.city, post) %> <%= post.created_at.to_date %></h4>
 			    	<p class="card-text"><%= post.content %></p>
 		    	</div>
@@ -29,4 +30,6 @@
 	  </div>
 	</div>
 </div>
+
+
 
