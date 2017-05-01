@@ -1,6 +1,5 @@
-
 <div class="cities-page">
-
+	<!-- David's version of a jumbtron! -->
 	<div class="container">
 	  <div class="big-image">
 	    <img src="<%= @city.photoUrl %>" class="big-image-jumbo">
@@ -13,7 +12,9 @@
 			<%= button_to "Add Post", new_city_post_path(@city.id), :method => "get" , :class => "buttonTo" %>
 		</div>
 	</div>
-
+	
+	<!-- The following div show posts, the author's pic and the date they were made. 
+	Also the titles are clickable to allow the user to edit or delete. -->
 	<div class="post-card-for-city" style="width: 70rem;">
 	  <div class="post-card-block">
 	   	<% @posts.each do |post| %>

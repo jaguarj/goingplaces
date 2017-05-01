@@ -1,8 +1,6 @@
 class PostsController < ApplicationController
 before_action :authenticate_user!
 
-
-
 	def show
 		@post = Post.find(params[:id])
 		@city = @post.city
@@ -20,6 +18,7 @@ before_action :authenticate_user!
 		@city = City.find(params["city_id"])
 		@post = Post.new(post_params)
 
+		#this redirect is needed in case the validation does NOT work
 		if @post.save
 			redirect_to "/cities/#{@city.id}"
 		else
@@ -31,6 +30,7 @@ before_action :authenticate_user!
 		@city = City.find(params[:city_id])
 		@post = Post.find(params[:id])
 	end
+
 	def update
 		post = Post.find(params[:id])
 		post.update(post_params)
@@ -40,6 +40,7 @@ before_action :authenticate_user!
 
 	def destroy
 		@post = Post.find(params[:id])
+		#used for redirecting the path
 		city = @post.city
 		@post.destroy
 		redirect_to city_path(city)

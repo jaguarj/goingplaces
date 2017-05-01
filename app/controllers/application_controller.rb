@@ -7,6 +7,5 @@ class ApplicationController < ActionController::Base
   # 	cityname = ''
   # end
 
-
-
+  # this was throwing errors so we commented out
 end

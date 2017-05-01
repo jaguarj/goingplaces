@@ -1,9 +1,11 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 *{
   font-family: arial, sans-serif;
 }
+
 body{
   background: #f2eabb
 }
@@ -20,6 +22,7 @@ body{
 .display-3 {
   background-color: rgba(255,255,255,0.5);
 }
+
 .container {
   text-align:center;
 }
@@ -47,25 +50,21 @@ nav {
 }
 
 .logos{
- height: 100px;
- width: 300px;
+  height: 100px;
+  width: 300px;
 }
-
 
 body.sessions_new, .registrations_create,.registrations_new{
- background-image: url("<%= asset_path('nyc.jpg')%>");
- background-repeat: no-repeat;
- background-size: cover;
- color: white;
+  background-image: url("<%= asset_path('nyc.jpg')%>");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
+
 .logIn{
   text-align:center;
   text-decoration-style: bold;
 }
-
-/*a{
-  color: white;
-}*/
 
 a:hover {
   text-decoration: none;
@@ -73,17 +72,16 @@ a:hover {
 }
 
 .blue {
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-background: rgba(0,0,0,0.5);
-background-size: contain;
-padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  background-size: contain;
+  padding: 10px;
 }
 
-
- .green {
+.green {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +90,7 @@ padding: 10px;
   background: rgba(0,0,0,0.5);
   background-size: contain;
   padding: 10px;
-  }
+}
 
 ul {
   padding-top: 20px;
@@ -102,21 +100,23 @@ li {
 	padding: 1.5rem;
   text-decoration:none;
 }
+
 .aboutPic{
   width: 200px;
   height: 200px;
 }
-#about-page {
- margin: 0 auto;
- margin-top:7rem;
- width: 700px;
- padding: 2rem;
- text-align: center;
- background: rgba(255,255,255,0.5);
- border-radius: 5%;
- transition: all .5s ease-in-out;
 
+#about-page {
+  margin: 0 auto;
+  margin-top:7rem;
+  width: 700px;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(255,255,255,0.5);
+  border-radius: 5%;
+  transition: all .5s ease-in-out;
 }
+
 #about-page:hover, .profile:hover, .profile-show:hover {
   box-shadow: 1px 1px 20px 1px black;
   transform: scale(1.1);
@@ -129,7 +129,6 @@ li {
   background-color: #f2eabb;
 }
 
-
 .master-container {
   display: flex;
   justify-content: space-around;
@@ -138,10 +137,9 @@ li {
 .show-card {
   width: 500px;
   display: inline-block;
-
 }
 
-.post_block{
+.post_block {
   margin: 0;
   max-width: 1300px;
   display: inline-block;
@@ -167,8 +165,5 @@ li {
   color: white;
 }
 
-/*#card_title a{
-  color:black;
-}*/
 
 
