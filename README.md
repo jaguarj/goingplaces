@@ -4,16 +4,18 @@
 
 **goingplaces** is an app that lets users post travel tips about the
 places they've visited! All a user has to do to make a new post is
-just sign up, and then the user will be routed to the home page to view a
+sign up, and then the user will be routed to the home page to view a
 list of current cities.
 
 Users can add, edit, and delete posts on the city of their choosing and
 they can also see all of their posts on their profile page.
 
+One challenge for this project were implementing ruby on rails with its ready-made routes and classes and instance variables. Ruby is so easy, it's hard. The other challenge for this project was working as a team. But we handled this challenge well, using specific github and workflow protocols and by keeping good communication. 
+
 ## Technologies Used
 
 * HTML
-* CSS
+* CSS-SASS
 * Ruby
 * Rails
 * Bootstrap
@@ -30,6 +32,5 @@ they can also see all of their posts on their profile page.
 * Magdelena Kinney
 * [Josh Seipel](https://jaguarj.github.io/myportfolio/)
 
-##Workflow and user stories
-* Trello (https://trello.com/b/MGznU8n0/project-4)
+
 
