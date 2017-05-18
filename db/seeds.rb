@@ -15,7 +15,7 @@ City.create(name: 	  'London',        photoUrl: 'https://cdn.londonandpartners.c
 City.create(name:     'San Francisco', photoUrl: 'http://assets.lookbookspro.com/bernstein-andriulli/gm_52c70ea2-a228-421f-9b72-48520af4b6c2.jpg',
 			location: 'California');
 
-
+# Three bad boys!
 User.create(email:    'abc@abc.com',   password: 'abcabc', favorite_city: 'Toledo', current_city: 'Hotlanta', username: 'Sanjeev',
     user_photo: 'https://avatars2.githubusercontent.com/u/4976591?v=3&s=460');
 User.create(email:    '123@123.com',   password: '123123', favorite_city: 'Neverneverland', current_city: 'Atlanta', username: 'Kush', 

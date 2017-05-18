@@ -32,5 +32,5 @@ One challenge for this project were implementing ruby on rails with its ready-ma
 * Magdelena Kinney
 * [Josh Seipel](https://jaguarj.github.io/myportfolio/)
 
-
+g
 
